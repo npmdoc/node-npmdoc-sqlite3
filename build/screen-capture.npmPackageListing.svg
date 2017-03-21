@@ -1,30 +1,30 @@
 <svg height="430" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="430" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  1.  2017-03-21 14:56:17 +0000     5178 byte  CHANGELOG.md</tspan>
-<tspan x="10" y="42">  2.  2017-03-21 14:56:17 +0000     2815 byte  CONTRIBUTING.md</tspan>
-<tspan x="10" y="58">  3.  2017-03-21 14:56:17 +0000     1460 byte  LICENSE</tspan>
-<tspan x="10" y="74">  4.  2017-03-21 14:56:17 +0000     8383 byte  README.md</tspan>
-<tspan x="10" y="90">  5.  2017-03-21 14:56:17 +0000     1817 byte  appveyor.yml</tspan>
-<tspan x="10" y="106">  6.  2017-03-21 14:56:17 +0000     1408 byte  binding.gyp</tspan>
-<tspan x="10" y="122">  7.  2017-03-21 14:56:17 +0000     1258 byte  deps/common-sqlite.gypi</tspan>
-<tspan x="10" y="138">  8.  2017-03-21 14:56:17 +0000      191 byte  deps/extract.py</tspan>
-<tspan x="10" y="154">  9.  2017-03-21 14:56:17 +0000  2490473 byte  deps/sqlite-autoconf-3150000.tar.gz</tspan>
-<tspan x="10" y="170"> 10.  2017-03-21 14:56:17 +0000     2758 byte  deps/sqlite3.gyp</tspan>
-<tspan x="10" y="186"> 11.  2017-03-21 14:56:17 +0000  1730644 byte  lib/binding/node-v51-linux-x64/node_sqlite3.node</tspan>
-<tspan x="10" y="202"> 12.  2017-03-21 14:56:17 +0000       39 byte  lib/index.js</tspan>
-<tspan x="10" y="218"> 13.  2017-03-21 14:56:17 +0000     5554 byte  lib/sqlite3.js</tspan>
-<tspan x="10" y="234"> 14.  2017-03-21 14:56:17 +0000     1437 byte  lib/trace.js</tspan>
-<tspan x="10" y="250"> 15.  2017-03-21 14:56:17 +0000     4289 byte  package.json</tspan>
-<tspan x="10" y="266"> 16.  2017-03-21 14:56:17 +0000       43 byte  sqlite3.js</tspan>
-<tspan x="10" y="282"> 17.  2017-03-21 14:56:17 +0000     1976 byte  src/async.h</tspan>
-<tspan x="10" y="298"> 18.  2017-03-21 14:56:17 +0000    19885 byte  src/database.cc</tspan>
-<tspan x="10" y="314"> 19.  2017-03-21 14:56:17 +0000     4939 byte  src/database.h</tspan>
-<tspan x="10" y="330"> 20.  2017-03-21 14:56:17 +0000      205 byte  src/gcc-preinclude.h</tspan>
-<tspan x="10" y="346"> 21.  2017-03-21 14:56:17 +0000     8931 byte  src/macros.h</tspan>
-<tspan x="10" y="362"> 22.  2017-03-21 14:56:17 +0000     4463 byte  src/node_sqlite3.cc</tspan>
-<tspan x="10" y="378"> 23.  2017-03-21 14:56:17 +0000    27209 byte  src/statement.cc</tspan>
-<tspan x="10" y="394"> 24.  2017-03-21 14:56:17 +0000     6453 byte  src/statement.h</tspan>
-<tspan x="10" y="410"> 25.  2017-03-21 14:56:17 +0000     1153 byte  src/threading.h</tspan>
+<tspan x="10" y="26">  1.  2017-03-21 15:40:51 +0000     5178 byte  CHANGELOG.md</tspan>
+<tspan x="10" y="42">  2.  2017-03-21 15:40:51 +0000     2815 byte  CONTRIBUTING.md</tspan>
+<tspan x="10" y="58">  3.  2017-03-21 15:40:51 +0000     1460 byte  LICENSE</tspan>
+<tspan x="10" y="74">  4.  2017-03-21 15:40:51 +0000     8383 byte  README.md</tspan>
+<tspan x="10" y="90">  5.  2017-03-21 15:40:51 +0000     1817 byte  appveyor.yml</tspan>
+<tspan x="10" y="106">  6.  2017-03-21 15:40:51 +0000     1408 byte  binding.gyp</tspan>
+<tspan x="10" y="122">  7.  2017-03-21 15:40:51 +0000     1258 byte  deps/common-sqlite.gypi</tspan>
+<tspan x="10" y="138">  8.  2017-03-21 15:40:51 +0000      191 byte  deps/extract.py</tspan>
+<tspan x="10" y="154">  9.  2017-03-21 15:40:51 +0000  2490473 byte  deps/sqlite-autoconf-3150000.tar.gz</tspan>
+<tspan x="10" y="170"> 10.  2017-03-21 15:40:51 +0000     2758 byte  deps/sqlite3.gyp</tspan>
+<tspan x="10" y="186"> 11.  2017-03-21 15:40:51 +0000  1730644 byte  lib/binding/node-v51-linux-x64/node_sqlite3.node</tspan>
+<tspan x="10" y="202"> 12.  2017-03-21 15:40:51 +0000       39 byte  lib/index.js</tspan>
+<tspan x="10" y="218"> 13.  2017-03-21 15:40:51 +0000     5554 byte  lib/sqlite3.js</tspan>
+<tspan x="10" y="234"> 14.  2017-03-21 15:40:51 +0000     1437 byte  lib/trace.js</tspan>
+<tspan x="10" y="250"> 15.  2017-03-21 15:40:51 +0000     4289 byte  package.json</tspan>
+<tspan x="10" y="266"> 16.  2017-03-21 15:40:51 +0000       43 byte  sqlite3.js</tspan>
+<tspan x="10" y="282"> 17.  2017-03-21 15:40:51 +0000     1976 byte  src/async.h</tspan>
+<tspan x="10" y="298"> 18.  2017-03-21 15:40:51 +0000    19885 byte  src/database.cc</tspan>
+<tspan x="10" y="314"> 19.  2017-03-21 15:40:51 +0000     4939 byte  src/database.h</tspan>
+<tspan x="10" y="330"> 20.  2017-03-21 15:40:51 +0000      205 byte  src/gcc-preinclude.h</tspan>
+<tspan x="10" y="346"> 21.  2017-03-21 15:40:51 +0000     8931 byte  src/macros.h</tspan>
+<tspan x="10" y="362"> 22.  2017-03-21 15:40:51 +0000     4463 byte  src/node_sqlite3.cc</tspan>
+<tspan x="10" y="378"> 23.  2017-03-21 15:40:51 +0000    27209 byte  src/statement.cc</tspan>
+<tspan x="10" y="394"> 24.  2017-03-21 15:40:51 +0000     6453 byte  src/statement.h</tspan>
+<tspan x="10" y="410"> 25.  2017-03-21 15:40:51 +0000     1153 byte  src/threading.h</tspan>
 </text>
 </svg>
