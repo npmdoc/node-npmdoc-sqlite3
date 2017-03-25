@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 </style>
-<h1>api-documentation for
+<h1>api documentation for
     <a
 
         href="http://github.com/mapbox/node-sqlite3"
@@ -1194,16 +1194,13 @@ db.close();
 
   // If there is no &#x27;error&#x27; event listener then throw.
   if (doError) {
-    if (arguments.length &#x3e; 1)
-      er = arguments[1];
+    er = arguments[1];
     if (domain) {
       if (!er)
         er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
-      if (typeof er === &#x27;object&#x27; &#x26;&#x26; er !== null) {
-        er.domainEmitter = this;
-        er.domain = domain;
-        er.domainThrown = false;
-      }
+      er.domainEmitter = this;
+      er.domain = domain;
+      er.domainThrown = false;
       domain.emit(&#x27;error&#x27;, er);
     } else if (er instanceof Error) {
       throw er; // Unhandled &#x27;error&#x27; event
@@ -1388,9 +1385,9 @@ db.close();
     if (!evlistener)
       ret = [];
     else if (typeof evlistener === &#x27;function&#x27;)
-      ret = [evlistener.listener || evlistener];
+      ret = [evlistener];
     else
-      ret = unwrapListeners(evlistener);
+      ret = arrayClone(evlistener, evlistener.length);
   }
 
   return ret;
@@ -1835,16 +1832,13 @@ db.close();
 
   // If there is no &#x27;error&#x27; event listener then throw.
   if (doError) {
-    if (arguments.length &#x3e; 1)
-      er = arguments[1];
+    er = arguments[1];
     if (domain) {
       if (!er)
         er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
-      if (typeof er === &#x27;object&#x27; &#x26;&#x26; er !== null) {
-        er.domainEmitter = this;
-        er.domain = domain;
-        er.domainThrown = false;
-      }
+      er.domainEmitter = this;
+      er.domain = domain;
+      er.domainThrown = false;
       domain.emit(&#x27;error&#x27;, er);
     } else if (er instanceof Error) {
       throw er; // Unhandled &#x27;error&#x27; event
@@ -2019,9 +2013,9 @@ db.close();
     if (!evlistener)
       ret = [];
     else if (typeof evlistener === &#x27;function&#x27;)
-      ret = [evlistener.listener || evlistener];
+      ret = [evlistener];
     else
-      ret = unwrapListeners(evlistener);
+      ret = arrayClone(evlistener, evlistener.length);
   }
 
   return ret;
@@ -2261,8 +2255,6 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
       } else {
         delete events[type];
       }
-    } else if (position === 0) {
-      list.shift();
     } else {
       spliceOne(list, position);
     }
