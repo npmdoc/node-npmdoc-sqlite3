@@ -1,11 +1,13 @@
-# api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
+# api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
 #### Asynchronous, non-blocking SQLite3 bindings
 
 [![NPM](https://nodei.co/npm/sqlite3.png?downloads=true)](https://www.npmjs.com/package/sqlite3)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-sqlite3_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sqlite3/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-sqlite3_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sqlite3/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
