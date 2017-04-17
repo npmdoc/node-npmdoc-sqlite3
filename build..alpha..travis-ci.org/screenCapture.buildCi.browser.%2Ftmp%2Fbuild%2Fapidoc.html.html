@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://github.com/mapbox/node-sqlite3"
-
-    >sqlite3 (v3.1.8)</a>
+    <a href="http://github.com/mapbox/node-sqlite3">sqlite3 (v3.1.8)</a>
 </h1>
 <h4>Asynchronous, non-blocking SQLite3 bindings</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.sqlite3">module sqlite3</a><ol>
 
@@ -1689,18 +1682,18 @@
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 ...</pre></li>
     </ul>
 
@@ -1715,7 +1708,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.addListener = function (type) {
     var val = EventEmitter.prototype.addListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, true);
     }
     return val;
@@ -1735,7 +1728,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.all = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -1787,7 +1780,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.each = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -1813,31 +1806,31 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">function emit(type) {
   var er, handler, len, args, i, events, domain;
   var needDomainExit = false;
-  var doError = (type === &#x27;error&#x27;);
+  var doError = (type === 'error');
 
   events = this._events;
   if (events)
-    doError = (doError &#x26;&#x26; events.error == null);
+    doError = (doError &amp;&amp; events.error == null);
   else if (!doError)
     return false;
 
   domain = this.domain;
 
-  // If there is no &#x27;error&#x27; event listener then throw.
+  // If there is no 'error' event listener then throw.
   if (doError) {
     er = arguments[1];
     if (domain) {
       if (!er)
-        er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
+        er = new Error('Uncaught, unspecified "error" event');
       er.domainEmitter = this;
       er.domain = domain;
       er.domainThrown = false;
-      domain.emit(&#x27;error&#x27;, er);
+      domain.emit('error', er);
     } else if (er instanceof Error) {
-      throw er; // Unhandled &#x27;error&#x27; event
+      throw er; // Unhandled 'error' event
     } else {
       // At least give some kind of context to the user
-      var err = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event. (&#x27; + er + &#x27;)&#x27;);
+      var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
       err.context = er;
       throw err;
     }
@@ -1849,12 +1842,12 @@ for (var i = 0; i &#x3c; 10; i++) {
   if (!handler)
     return false;
 
-  if (domain &#x26;&#x26; this !== process) {
+  if (domain &amp;&amp; this !== process) {
     domain.enter();
     needDomainExit = true;
   }
 
-  var isFn = typeof handler === &#x27;function&#x27;;
+  var isFn = typeof handler === 'function';
   len = arguments.length;
   switch (len) {
     // fast cases
@@ -1873,7 +1866,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     // slower
     default:
       args = new Array(len - 1);
-      for (i = 1; i &#x3c; len; i++)
+      for (i = 1; i &lt; len; i++)
         args[i - 1] = arguments[i];
       emitMany(handler, isFn, this, args);
   }
@@ -1896,7 +1889,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function eventNames() {
-  return this._eventsCount &#x3e; 0 ? Reflect.ownKeys(this._events) : [];
+  return this._eventsCount &gt; 0 ? Reflect.ownKeys(this._events) : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1926,7 +1919,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.get = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -1983,7 +1976,7 @@ for (var i = 0; i &#x3c; 10; i++) {
   if (events) {
     const evlistener = events[type];
 
-    if (typeof evlistener === &#x27;function&#x27;) {
+    if (typeof evlistener === 'function') {
       return 1;
     } else if (evlistener) {
       return evlistener.length;
@@ -2015,7 +2008,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     evlistener = events[type];
     if (!evlistener)
       ret = [];
-    else if (typeof evlistener === &#x27;function&#x27;)
+    else if (typeof evlistener === 'function')
       ret = [evlistener];
     else
       ret = arrayClone(evlistener, evlistener.length);
@@ -2051,7 +2044,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.map = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -2075,8 +2068,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function once(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.on(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -2108,7 +2101,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.prepare = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -2147,8 +2140,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function prependOnceListener(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.prependListener(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -2166,7 +2159,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.removeAllListeners = function (type) {
     var val = EventEmitter.prototype.removeAllListeners.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, false);
     }
     return val;
@@ -2185,7 +2178,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.removeListener = function (type) {
     var val = EventEmitter.prototype.removeListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0 &#x26;&#x26; !this._events[type]) {
+    if (supportedEvents.indexOf(type) &gt;= 0 &amp;&amp; !this._events[type]) {
         this.configure(type, false);
     }
     return val;
@@ -2205,7 +2198,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">Database.prototype.run = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -2242,8 +2235,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function setMaxListeners(n) {
-  if (typeof n !== &#x27;number&#x27; || n &#x3c; 0 || isNaN(n))
-    throw new TypeError(&#x27;&#x22;n&#x22; argument must be a positive number&#x27;);
+  if (typeof n !== 'number' || n &lt; 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
   this._maxListeners = n;
   return this;
 }</pre></li>
@@ -2373,15 +2366,15 @@ for (var i = 0; i &#x3c; 10; i++) {
         var result = {};
         if (rows.length) {
             var keys = Object.keys(rows[0]), key = keys[0];
-            if (keys.length &#x3e; 2) {
+            if (keys.length &gt; 2) {
                 // Value is an object
-                for (var i = 0; i &#x3c; rows.length; i++) {
+                for (var i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i];
                 }
             } else {
                 var value = keys[1];
                 // Value is a plain value
-                for (i = 0; i &#x3c; rows.length; i++) {
+                for (i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i][value];
                 }
             }
@@ -2426,12 +2419,12 @@ for (var i = 0; i &#x3c; 10; i++) {
   // emit removeListener for all listeners on all events
   if (arguments.length === 0) {
     var keys = Object.keys(events);
-    for (var i = 0, key; i &#x3c; keys.length; ++i) {
+    for (var i = 0, key; i &lt; keys.length; ++i) {
       key = keys[i];
-      if (key === &#x27;removeListener&#x27;) continue;
+      if (key === 'removeListener') continue;
       this.removeAllListeners(key);
     }
-    this.removeAllListeners(&#x27;removeListener&#x27;);
+    this.removeAllListeners('removeListener');
     this._events = new EventHandlers();
     this._eventsCount = 0;
     return this;
@@ -2439,7 +2432,7 @@ for (var i = 0; i &#x3c; 10; i++) {
 
   listeners = events[type];
 
-  if (typeof listeners === &#x27;function&#x27;) {
+  if (typeof listeners === 'function') {
     this.removeListener(type, listeners);
   } else if (listeners) {
     // LIFO order
@@ -2465,8 +2458,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">function removeListener(type, listener) {
   var list, events, position, i, originalListener;
 
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
 
   events = this._events;
   if (!events)
@@ -2482,12 +2475,12 @@ for (var i = 0; i &#x3c; 10; i++) {
     else {
       delete events[type];
       if (events.removeListener)
-        this.emit(&#x27;removeListener&#x27;, type, list.listener || listener);
+        this.emit('removeListener', type, list.listener || listener);
     }
-  } else if (typeof list !== &#x27;function&#x27;) {
+  } else if (typeof list !== 'function') {
     position = -1;
 
-    for (i = list.length; i-- &#x3e; 0;) {
+    for (i = list.length; i-- &gt; 0;) {
       if (list[i] === listener || list[i].listener === listener) {
         originalListener = list[i].listener;
         position = i;
@@ -2495,7 +2488,7 @@ for (var i = 0; i &#x3c; 10; i++) {
       }
     }
 
-    if (position &#x3c; 0)
+    if (position &lt; 0)
       return this;
 
     if (list.length === 1) {
@@ -2511,7 +2504,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     }
 
     if (events.removeListener)
-      this.emit(&#x27;removeListener&#x27;, type, originalListener || listener);
+      this.emit('removeListener', type, originalListener || listener);
   }
 
   return this;
@@ -2555,8 +2548,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">cached.Database = function (file, a, b) {
-    if (file === &#x27;&#x27; || file === &#x27;:memory:&#x27;) {
-        // Don&#x27;t cache special databases.
+    if (file === '' || file === ':memory:') {
+        // Don't cache special databases.
         return new Database(file, a, b);
     }
 
@@ -2570,10 +2563,10 @@ for (var i = 0; i &#x3c; 10; i++) {
     else {
         // Make sure the callback is called.
         db = sqlite3.cached.objects[file];
-        var callback = (typeof a === &#x27;number&#x27;) ? b : a;
-        if (typeof callback === &#x27;function&#x27;) {
+        var callback = (typeof a === 'number') ? b : a;
+        if (typeof callback === 'function') {
             if (db.open) process.nextTick(cb);
-            else db.once(&#x27;open&#x27;, cb);
+            else db.once('open', cb);
         }
     }
 
@@ -2593,28 +2586,28 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">verbose = function () {
     if (!isVerbose) {
-        var trace = require(&#x27;./trace&#x27;);
+        var trace = require('./trace');
         [
-            &#x27;prepare&#x27;,
-            &#x27;get&#x27;,
-            &#x27;run&#x27;,
-            &#x27;all&#x27;,
-            &#x27;each&#x27;,
-            &#x27;map&#x27;,
-            &#x27;close&#x27;,
-            &#x27;exec&#x27;
+            'prepare',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'close',
+            'exec'
         ].forEach(function (name) {
             trace.extendTrace(Database.prototype, name);
         });
         [
-            &#x27;bind&#x27;,
-            &#x27;get&#x27;,
-            &#x27;run&#x27;,
-            &#x27;all&#x27;,
-            &#x27;each&#x27;,
-            &#x27;map&#x27;,
-            &#x27;reset&#x27;,
-            &#x27;finalize&#x27;,
+            'bind',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'reset',
+            'finalize',
         ].forEach(function (name) {
             trace.extendTrace(Statement.prototype, name);
         });
@@ -2624,22 +2617,22 @@ for (var i = 0; i &#x3c; 10; i++) {
     return this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-SQLite&#x27;s [SQLCipher extension](https://github.com/sqlcipher/sqlcipher) is also supported. [(See below.)](#building-for-sqlcipher
+SQLite's [SQLCipher extension](https://github.com/sqlcipher/sqlcipher) isÂ&nbsp;also supported. [(SeeÂ&nbsp;below.)](#building-for-sqlcipher
 )
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).<span class="apidocCodeKeywordSpan">verbose</span>();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').<span class="apidocCodeKeywordSpan">verbose</span>();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
 ...</pre></li>
     </ul>
 
@@ -2736,18 +2729,18 @@ for (var i = 0; i &#x3c; 10; i++) {
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 ...</pre></li>
     </ul>
 
@@ -2767,7 +2760,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">addListener = function (type) {
     var val = EventEmitter.prototype.addListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, true);
     }
     return val;
@@ -2787,7 +2780,7 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>description and source-code<pre class="apidocCodePre">all = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -2814,8 +2807,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     <li>example usage<pre class="apidocCodePre">...
  stmt.finalize();
 
- db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-     console.log(row.id + &#x22;: &#x22; + row.info);
+ db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+     console.log(row.id + ": " + row.info);
  });
 });
 
@@ -2855,7 +2848,7 @@ db.<span class="apidocCodeKeywordSpan">close</span>();
     <li>description and source-code<pre class="apidocCodePre">each = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -2868,14 +2861,14 @@ db.<span class="apidocCodeKeywordSpan">close</span>();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.finalize();
 
-  db.<span class="apidocCodeKeywordSpan">each</span>(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.<span class="apidocCodeKeywordSpan">each</span>("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -2896,31 +2889,31 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">function emit(type) {
   var er, handler, len, args, i, events, domain;
   var needDomainExit = false;
-  var doError = (type === &#x27;error&#x27;);
+  var doError = (type === 'error');
 
   events = this._events;
   if (events)
-    doError = (doError &#x26;&#x26; events.error == null);
+    doError = (doError &amp;&amp; events.error == null);
   else if (!doError)
     return false;
 
   domain = this.domain;
 
-  // If there is no &#x27;error&#x27; event listener then throw.
+  // If there is no 'error' event listener then throw.
   if (doError) {
     er = arguments[1];
     if (domain) {
       if (!er)
-        er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
+        er = new Error('Uncaught, unspecified "error" event');
       er.domainEmitter = this;
       er.domain = domain;
       er.domainThrown = false;
-      domain.emit(&#x27;error&#x27;, er);
+      domain.emit('error', er);
     } else if (er instanceof Error) {
-      throw er; // Unhandled &#x27;error&#x27; event
+      throw er; // Unhandled 'error' event
     } else {
       // At least give some kind of context to the user
-      var err = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event. (&#x27; + er + &#x27;)&#x27;);
+      var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
       err.context = er;
       throw err;
     }
@@ -2932,12 +2925,12 @@ db.close();
   if (!handler)
     return false;
 
-  if (domain &#x26;&#x26; this !== process) {
+  if (domain &amp;&amp; this !== process) {
     domain.enter();
     needDomainExit = true;
   }
 
-  var isFn = typeof handler === &#x27;function&#x27;;
+  var isFn = typeof handler === 'function';
   len = arguments.length;
   switch (len) {
     // fast cases
@@ -2956,7 +2949,7 @@ db.close();
     // slower
     default:
       args = new Array(len - 1);
-      for (i = 1; i &#x3c; len; i++)
+      for (i = 1; i &lt; len; i++)
         args[i - 1] = arguments[i];
       emitMany(handler, isFn, this, args);
   }
@@ -2979,7 +2972,7 @@ db.close();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function eventNames() {
-  return this._eventsCount &#x3e; 0 ? Reflect.ownKeys(this._events) : [];
+  return this._eventsCount &gt; 0 ? Reflect.ownKeys(this._events) : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3009,7 +3002,7 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">get = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3066,7 +3059,7 @@ db.close();
   if (events) {
     const evlistener = events[type];
 
-    if (typeof evlistener === &#x27;function&#x27;) {
+    if (typeof evlistener === 'function') {
       return 1;
     } else if (evlistener) {
       return evlistener.length;
@@ -3098,7 +3091,7 @@ db.close();
     evlistener = events[type];
     if (!evlistener)
       ret = [];
-    else if (typeof evlistener === &#x27;function&#x27;)
+    else if (typeof evlistener === 'function')
       ret = [evlistener];
     else
       ret = arrayClone(evlistener, evlistener.length);
@@ -3134,7 +3127,7 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">map = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3146,21 +3139,21 @@ db.close();
     return fn.call(this, statement, args);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var util = require(&#x27;util&#x27;);
+var util = require('util');
 
 function extendTrace(object, property, pos) {
     var old = object[property];
     object[property] = function() {
 var error = new Error();
-var name = object.constructor.name + &#x27;#&#x27; + property + &#x27;(&#x27; +
+var name = object.constructor.name + '#' + property + '(' +
     Array.prototype.slice.call(arguments).<span class="apidocCodeKeywordSpan">map</span>(function(el) {
         return util.inspect(el, false, 0);
-    }).join(&#x27;, &#x27;) + &#x27;)&#x27;;
+    }).join(', ') + ')';
 
-if (typeof pos === &#x27;undefined&#x27;) pos = -1;
-if (pos &#x3c; 0) pos += arguments.length;
+if (typeof pos === 'undefined') pos = -1;
+if (pos &lt; 0) pos += arguments.length;
 var cb = arguments[pos];
-if (typeof arguments[pos] === &#x27;function&#x27;) {
+if (typeof arguments[pos] === 'function') {
 ...</pre></li>
     </ul>
 
@@ -3175,7 +3168,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">on = function (type) {
     var val = EventEmitter.prototype.addListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, true);
     }
     return val;
@@ -3193,8 +3186,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function once(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.on(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -3226,7 +3219,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <li>description and source-code<pre class="apidocCodePre">prepare = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3239,20 +3232,20 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.<span class="apidocCodeKeywordSpan">prepare</span>(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.<span class="apidocCodeKeywordSpan">prepare</span>("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 
-db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-    console.log(row.id + &#x22;: &#x22; + row.info);
+db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+    console.log(row.id + ": " + row.info);
 ...</pre></li>
     </ul>
 
@@ -3281,8 +3274,8 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function prependOnceListener(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.prependListener(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -3300,7 +3293,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">removeAllListeners = function (type) {
     var val = EventEmitter.prototype.removeAllListeners.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, false);
     }
     return val;
@@ -3319,7 +3312,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">removeListener = function (type) {
     var val = EventEmitter.prototype.removeListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0 &#x26;&#x26; !this._events[type]) {
+    if (supportedEvents.indexOf(type) &gt;= 0 &amp;&amp; !this._events[type]) {
         this.configure(type, false);
     }
     return val;
@@ -3339,7 +3332,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <li>description and source-code<pre class="apidocCodePre">run = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3351,18 +3344,18 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     return fn.call(this, statement, args);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.<span class="apidocCodeKeywordSpan">run</span>(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.<span class="apidocCodeKeywordSpan">run</span>("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -3380,18 +3373,18 @@ stmt.finalize();
     <li>description and source-code<pre class="apidocCodePre">function serialize() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.<span class="apidocCodeKeywordSpan">serialize</span>(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -3407,8 +3400,8 @@ stmt.finalize();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function setMaxListeners(n) {
-  if (typeof n !== &#x27;number&#x27; || n &#x3c; 0 || isNaN(n))
-    throw new TypeError(&#x27;&#x22;n&#x22; argument must be a positive number&#x27;);
+  if (typeof n !== 'number' || n &lt; 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
   this._maxListeners = n;
   return this;
 }</pre></li>
@@ -3446,7 +3439,7 @@ stmt.finalize();
     <ul>
     <li>description and source-code<pre class="apidocCodePre">addListener = function (type) {
     var val = EventEmitter.prototype.addListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, true);
     }
     return val;
@@ -3471,7 +3464,7 @@ stmt.finalize();
     <li>description and source-code<pre class="apidocCodePre">all = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3503,8 +3496,8 @@ stmt.finalize();
     <li>example usage<pre class="apidocCodePre">...
  stmt.finalize();
 
- db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-     console.log(row.id + &#x22;: &#x22; + row.info);
+ db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+     console.log(row.id + ": " + row.info);
  });
 });
 
@@ -3554,7 +3547,7 @@ db.<span class="apidocCodeKeywordSpan">close</span>();
     <li>description and source-code<pre class="apidocCodePre">each = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3567,14 +3560,14 @@ db.<span class="apidocCodeKeywordSpan">close</span>();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.finalize();
 
-  db.<span class="apidocCodeKeywordSpan">each</span>(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.<span class="apidocCodeKeywordSpan">each</span>("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -3600,31 +3593,31 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">function emit(type) {
   var er, handler, len, args, i, events, domain;
   var needDomainExit = false;
-  var doError = (type === &#x27;error&#x27;);
+  var doError = (type === 'error');
 
   events = this._events;
   if (events)
-    doError = (doError &#x26;&#x26; events.error == null);
+    doError = (doError &amp;&amp; events.error == null);
   else if (!doError)
     return false;
 
   domain = this.domain;
 
-  // If there is no &#x27;error&#x27; event listener then throw.
+  // If there is no 'error' event listener then throw.
   if (doError) {
     er = arguments[1];
     if (domain) {
       if (!er)
-        er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
+        er = new Error('Uncaught, unspecified "error" event');
       er.domainEmitter = this;
       er.domain = domain;
       er.domainThrown = false;
-      domain.emit(&#x27;error&#x27;, er);
+      domain.emit('error', er);
     } else if (er instanceof Error) {
-      throw er; // Unhandled &#x27;error&#x27; event
+      throw er; // Unhandled 'error' event
     } else {
       // At least give some kind of context to the user
-      var err = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event. (&#x27; + er + &#x27;)&#x27;);
+      var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
       err.context = er;
       throw err;
     }
@@ -3636,12 +3629,12 @@ db.close();
   if (!handler)
     return false;
 
-  if (domain &#x26;&#x26; this !== process) {
+  if (domain &amp;&amp; this !== process) {
     domain.enter();
     needDomainExit = true;
   }
 
-  var isFn = typeof handler === &#x27;function&#x27;;
+  var isFn = typeof handler === 'function';
   len = arguments.length;
   switch (len) {
     // fast cases
@@ -3660,7 +3653,7 @@ db.close();
     // slower
     default:
       args = new Array(len - 1);
-      for (i = 1; i &#x3c; len; i++)
+      for (i = 1; i &lt; len; i++)
         args[i - 1] = arguments[i];
       emitMany(handler, isFn, this, args);
   }
@@ -3688,7 +3681,7 @@ db.close();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function eventNames() {
-  return this._eventsCount &#x3e; 0 ? Reflect.ownKeys(this._events) : [];
+  return this._eventsCount &gt; 0 ? Reflect.ownKeys(this._events) : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3728,7 +3721,7 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">get = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3800,7 +3793,7 @@ db.close();
   if (events) {
     const evlistener = events[type];
 
-    if (typeof evlistener === &#x27;function&#x27;) {
+    if (typeof evlistener === 'function') {
       return 1;
     } else if (evlistener) {
       return evlistener.length;
@@ -3837,7 +3830,7 @@ db.close();
     evlistener = events[type];
     if (!evlistener)
       ret = [];
-    else if (typeof evlistener === &#x27;function&#x27;)
+    else if (typeof evlistener === 'function')
       ret = [evlistener];
     else
       ret = arrayClone(evlistener, evlistener.length);
@@ -3883,7 +3876,7 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">map = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3895,21 +3888,21 @@ db.close();
     return fn.call(this, statement, args);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var util = require(&#x27;util&#x27;);
+var util = require('util');
 
 function extendTrace(object, property, pos) {
     var old = object[property];
     object[property] = function() {
 var error = new Error();
-var name = object.constructor.name + &#x27;#&#x27; + property + &#x27;(&#x27; +
+var name = object.constructor.name + '#' + property + '(' +
     Array.prototype.slice.call(arguments).<span class="apidocCodeKeywordSpan">map</span>(function(el) {
         return util.inspect(el, false, 0);
-    }).join(&#x27;, &#x27;) + &#x27;)&#x27;;
+    }).join(', ') + ')';
 
-if (typeof pos === &#x27;undefined&#x27;) pos = -1;
-if (pos &#x3c; 0) pos += arguments.length;
+if (typeof pos === 'undefined') pos = -1;
+if (pos &lt; 0) pos += arguments.length;
 var cb = arguments[pos];
-if (typeof arguments[pos] === &#x27;function&#x27;) {
+if (typeof arguments[pos] === 'function') {
 ...</pre></li>
     </ul>
 
@@ -3928,8 +3921,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function once(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.on(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -3971,7 +3964,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <li>description and source-code<pre class="apidocCodePre">prepare = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -3984,20 +3977,20 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.<span class="apidocCodeKeywordSpan">prepare</span>(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.<span class="apidocCodeKeywordSpan">prepare</span>("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 
-db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-    console.log(row.id + &#x22;: &#x22; + row.info);
+db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+    console.log(row.id + ": " + row.info);
 ...</pre></li>
     </ul>
 
@@ -4036,8 +4029,8 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function prependOnceListener(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.prependListener(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -4060,7 +4053,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">removeAllListeners = function (type) {
     var val = EventEmitter.prototype.removeAllListeners.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0) {
+    if (supportedEvents.indexOf(type) &gt;= 0) {
         this.configure(type, false);
     }
     return val;
@@ -4084,7 +4077,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">removeListener = function (type) {
     var val = EventEmitter.prototype.removeListener.apply(this, arguments);
-    if (supportedEvents.indexOf(type) &#x3e;= 0 &#x26;&#x26; !this._events[type]) {
+    if (supportedEvents.indexOf(type) &gt;= 0 &amp;&amp; !this._events[type]) {
         this.configure(type, false);
     }
     return val;
@@ -4109,7 +4102,7 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     <li>description and source-code<pre class="apidocCodePre">run = function (sql) {
     var errBack;
     var args = Array.prototype.slice.call(arguments, 1);
-    if (typeof args[args.length - 1] === &#x27;function&#x27;) {
+    if (typeof args[args.length - 1] === 'function') {
         var callback = args[args.length - 1];
         errBack = function(err) {
             if (err) {
@@ -4121,18 +4114,18 @@ db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
     return fn.call(this, statement, args);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.<span class="apidocCodeKeywordSpan">run</span>(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.<span class="apidocCodeKeywordSpan">run</span>("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -4155,18 +4148,18 @@ stmt.finalize();
     <li>description and source-code<pre class="apidocCodePre">function serialize() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.<span class="apidocCodeKeywordSpan">serialize</span>(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -4187,8 +4180,8 @@ stmt.finalize();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function setMaxListeners(n) {
-  if (typeof n !== &#x27;number&#x27; || n &#x3c; 0 || isNaN(n))
-    throw new TypeError(&#x27;&#x22;n&#x22; argument must be a positive number&#x27;);
+  if (typeof n !== 'number' || n &lt; 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
   this._maxListeners = n;
   return this;
 }</pre></li>
@@ -4289,14 +4282,14 @@ stmt.finalize();
     <li>description and source-code<pre class="apidocCodePre">function each() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.finalize();
 
-  db.<span class="apidocCodeKeywordSpan">each</span>(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.<span class="apidocCodeKeywordSpan">each</span>("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -4317,31 +4310,31 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">function emit(type) {
   var er, handler, len, args, i, events, domain;
   var needDomainExit = false;
-  var doError = (type === &#x27;error&#x27;);
+  var doError = (type === 'error');
 
   events = this._events;
   if (events)
-    doError = (doError &#x26;&#x26; events.error == null);
+    doError = (doError &amp;&amp; events.error == null);
   else if (!doError)
     return false;
 
   domain = this.domain;
 
-  // If there is no &#x27;error&#x27; event listener then throw.
+  // If there is no 'error' event listener then throw.
   if (doError) {
     er = arguments[1];
     if (domain) {
       if (!er)
-        er = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event&#x27;);
+        er = new Error('Uncaught, unspecified "error" event');
       er.domainEmitter = this;
       er.domain = domain;
       er.domainThrown = false;
-      domain.emit(&#x27;error&#x27;, er);
+      domain.emit('error', er);
     } else if (er instanceof Error) {
-      throw er; // Unhandled &#x27;error&#x27; event
+      throw er; // Unhandled 'error' event
     } else {
       // At least give some kind of context to the user
-      var err = new Error(&#x27;Uncaught, unspecified &#x22;error&#x22; event. (&#x27; + er + &#x27;)&#x27;);
+      var err = new Error('Uncaught, unspecified "error" event. (' + er + ')');
       err.context = er;
       throw err;
     }
@@ -4353,12 +4346,12 @@ db.close();
   if (!handler)
     return false;
 
-  if (domain &#x26;&#x26; this !== process) {
+  if (domain &amp;&amp; this !== process) {
     domain.enter();
     needDomainExit = true;
   }
 
-  var isFn = typeof handler === &#x27;function&#x27;;
+  var isFn = typeof handler === 'function';
   len = arguments.length;
   switch (len) {
     // fast cases
@@ -4377,7 +4370,7 @@ db.close();
     // slower
     default:
       args = new Array(len - 1);
-      for (i = 1; i &#x3c; len; i++)
+      for (i = 1; i &lt; len; i++)
         args[i - 1] = arguments[i];
       emitMany(handler, isFn, this, args);
   }
@@ -4400,7 +4393,7 @@ db.close();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function eventNames() {
-  return this._eventsCount &#x3e; 0 ? Reflect.ownKeys(this._events) : [];
+  return this._eventsCount &gt; 0 ? Reflect.ownKeys(this._events) : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4417,16 +4410,16 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">function finalize() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 db.serialize(function() {
-  db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+  db.run("CREATE TABLE lorem (info TEXT)");
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.<span class="apidocCodeKeywordSpan">finalize</span>();
 
-  db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -4477,7 +4470,7 @@ db.close();
   if (events) {
     const evlistener = events[type];
 
-    if (typeof evlistener === &#x27;function&#x27;) {
+    if (typeof evlistener === 'function') {
       return 1;
     } else if (evlistener) {
       return evlistener.length;
@@ -4509,7 +4502,7 @@ db.close();
     evlistener = events[type];
     if (!evlistener)
       ret = [];
-    else if (typeof evlistener === &#x27;function&#x27;)
+    else if (typeof evlistener === 'function')
       ret = [evlistener];
     else
       ret = arrayClone(evlistener, evlistener.length);
@@ -4537,15 +4530,15 @@ db.close();
         var result = {};
         if (rows.length) {
             var keys = Object.keys(rows[0]), key = keys[0];
-            if (keys.length &#x3e; 2) {
+            if (keys.length &gt; 2) {
                 // Value is an object
-                for (var i = 0; i &#x3c; rows.length; i++) {
+                for (var i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i];
                 }
             } else {
                 var value = keys[1];
                 // Value is a plain value
-                for (i = 0; i &#x3c; rows.length; i++) {
+                for (i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i][value];
                 }
             }
@@ -4555,21 +4548,21 @@ db.close();
     return this.all.apply(this, params);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var util = require(&#x27;util&#x27;);
+var util = require('util');
 
 function extendTrace(object, property, pos) {
     var old = object[property];
     object[property] = function() {
 var error = new Error();
-var name = object.constructor.name + &#x27;#&#x27; + property + &#x27;(&#x27; +
+var name = object.constructor.name + '#' + property + '(' +
     Array.prototype.slice.call(arguments).<span class="apidocCodeKeywordSpan">map</span>(function(el) {
         return util.inspect(el, false, 0);
-    }).join(&#x27;, &#x27;) + &#x27;)&#x27;;
+    }).join(', ') + ')';
 
-if (typeof pos === &#x27;undefined&#x27;) pos = -1;
-if (pos &#x3c; 0) pos += arguments.length;
+if (typeof pos === 'undefined') pos = -1;
+if (pos &lt; 0) pos += arguments.length;
 var cb = arguments[pos];
-if (typeof arguments[pos] === &#x27;function&#x27;) {
+if (typeof arguments[pos] === 'function') {
 ...</pre></li>
     </ul>
 
@@ -4598,8 +4591,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function once(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.on(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -4631,8 +4624,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function prependOnceListener(type, listener) {
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
   this.prependListener(type, _onceWrap(this, type, listener));
   return this;
 }</pre></li>
@@ -4672,12 +4665,12 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
   // emit removeListener for all listeners on all events
   if (arguments.length === 0) {
     var keys = Object.keys(events);
-    for (var i = 0, key; i &#x3c; keys.length; ++i) {
+    for (var i = 0, key; i &lt; keys.length; ++i) {
       key = keys[i];
-      if (key === &#x27;removeListener&#x27;) continue;
+      if (key === 'removeListener') continue;
       this.removeAllListeners(key);
     }
-    this.removeAllListeners(&#x27;removeListener&#x27;);
+    this.removeAllListeners('removeListener');
     this._events = new EventHandlers();
     this._eventsCount = 0;
     return this;
@@ -4685,7 +4678,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
 
   listeners = events[type];
 
-  if (typeof listeners === &#x27;function&#x27;) {
+  if (typeof listeners === 'function') {
     this.removeListener(type, listeners);
   } else if (listeners) {
     // LIFO order
@@ -4711,8 +4704,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <li>description and source-code<pre class="apidocCodePre">function removeListener(type, listener) {
   var list, events, position, i, originalListener;
 
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
 
   events = this._events;
   if (!events)
@@ -4728,12 +4721,12 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     else {
       delete events[type];
       if (events.removeListener)
-        this.emit(&#x27;removeListener&#x27;, type, list.listener || listener);
+        this.emit('removeListener', type, list.listener || listener);
     }
-  } else if (typeof list !== &#x27;function&#x27;) {
+  } else if (typeof list !== 'function') {
     position = -1;
 
-    for (i = list.length; i-- &#x3e; 0;) {
+    for (i = list.length; i-- &gt; 0;) {
       if (list[i] === listener || list[i].listener === listener) {
         originalListener = list[i].listener;
         position = i;
@@ -4741,7 +4734,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
       }
     }
 
-    if (position &#x3c; 0)
+    if (position &lt; 0)
       return this;
 
     if (list.length === 1) {
@@ -4757,7 +4750,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     }
 
     if (events.removeListener)
-      this.emit(&#x27;removeListener&#x27;, type, originalListener || listener);
+      this.emit('removeListener', type, originalListener || listener);
   }
 
   return this;
@@ -4789,18 +4782,18 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function run() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.<span class="apidocCodeKeywordSpan">run</span>(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.<span class="apidocCodeKeywordSpan">run</span>("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -4816,8 +4809,8 @@ stmt.finalize();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function setMaxListeners(n) {
-  if (typeof n !== &#x27;number&#x27; || n &#x3c; 0 || isNaN(n))
-    throw new TypeError(&#x27;&#x22;n&#x22; argument must be a positive number&#x27;);
+  if (typeof n !== 'number' || n &lt; 0 || isNaN(n))
+    throw new TypeError('"n" argument must be a positive number');
   this._maxListeners = n;
   return this;
 }</pre></li>
@@ -4899,14 +4892,14 @@ stmt.finalize();
     <li>description and source-code<pre class="apidocCodePre">function each() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.finalize();
 
-  db.<span class="apidocCodeKeywordSpan">each</span>(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.<span class="apidocCodeKeywordSpan">each</span>("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -4932,16 +4925,16 @@ db.close();
     <li>description and source-code<pre class="apidocCodePre">function finalize() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 db.serialize(function() {
-  db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+  db.run("CREATE TABLE lorem (info TEXT)");
 
-  var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-  for (var i = 0; i &#x3c; 10; i++) {
-      stmt.run(&#x22;Ipsum &#x22; + i);
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i &lt; 10; i++) {
+      stmt.run("Ipsum " + i);
   }
   stmt.<span class="apidocCodeKeywordSpan">finalize</span>();
 
-  db.each(&#x22;SELECT rowid AS id, info FROM lorem&#x22;, function(err, row) {
-      console.log(row.id + &#x22;: &#x22; + row.info);
+  db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+      console.log(row.id + ": " + row.info);
   });
 });
 
@@ -4989,15 +4982,15 @@ db.close();
         var result = {};
         if (rows.length) {
             var keys = Object.keys(rows[0]), key = keys[0];
-            if (keys.length &#x3e; 2) {
+            if (keys.length &gt; 2) {
                 // Value is an object
-                for (var i = 0; i &#x3c; rows.length; i++) {
+                for (var i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i];
                 }
             } else {
                 var value = keys[1];
                 // Value is a plain value
-                for (i = 0; i &#x3c; rows.length; i++) {
+                for (i = 0; i &lt; rows.length; i++) {
                     result[rows[i][key]] = rows[i][value];
                 }
             }
@@ -5007,21 +5000,21 @@ db.close();
     return this.all.apply(this, params);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var util = require(&#x27;util&#x27;);
+var util = require('util');
 
 function extendTrace(object, property, pos) {
     var old = object[property];
     object[property] = function() {
 var error = new Error();
-var name = object.constructor.name + &#x27;#&#x27; + property + &#x27;(&#x27; +
+var name = object.constructor.name + '#' + property + '(' +
     Array.prototype.slice.call(arguments).<span class="apidocCodeKeywordSpan">map</span>(function(el) {
         return util.inspect(el, false, 0);
-    }).join(&#x27;, &#x27;) + &#x27;)&#x27;;
+    }).join(', ') + ')';
 
-if (typeof pos === &#x27;undefined&#x27;) pos = -1;
-if (pos &#x3c; 0) pos += arguments.length;
+if (typeof pos === 'undefined') pos = -1;
+if (pos &lt; 0) pos += arguments.length;
 var cb = arguments[pos];
-if (typeof arguments[pos] === &#x27;function&#x27;) {
+if (typeof arguments[pos] === 'function') {
 ...</pre></li>
     </ul>
 
@@ -5063,12 +5056,12 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
   // emit removeListener for all listeners on all events
   if (arguments.length === 0) {
     var keys = Object.keys(events);
-    for (var i = 0, key; i &#x3c; keys.length; ++i) {
+    for (var i = 0, key; i &lt; keys.length; ++i) {
       key = keys[i];
-      if (key === &#x27;removeListener&#x27;) continue;
+      if (key === 'removeListener') continue;
       this.removeAllListeners(key);
     }
-    this.removeAllListeners(&#x27;removeListener&#x27;);
+    this.removeAllListeners('removeListener');
     this._events = new EventHandlers();
     this._eventsCount = 0;
     return this;
@@ -5076,7 +5069,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
 
   listeners = events[type];
 
-  if (typeof listeners === &#x27;function&#x27;) {
+  if (typeof listeners === 'function') {
     this.removeListener(type, listeners);
   } else if (listeners) {
     // LIFO order
@@ -5107,8 +5100,8 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <li>description and source-code<pre class="apidocCodePre">function removeListener(type, listener) {
   var list, events, position, i, originalListener;
 
-  if (typeof listener !== &#x27;function&#x27;)
-    throw new TypeError(&#x27;&#x22;listener&#x22; argument must be a function&#x27;);
+  if (typeof listener !== 'function')
+    throw new TypeError('"listener" argument must be a function');
 
   events = this._events;
   if (!events)
@@ -5124,12 +5117,12 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     else {
       delete events[type];
       if (events.removeListener)
-        this.emit(&#x27;removeListener&#x27;, type, list.listener || listener);
+        this.emit('removeListener', type, list.listener || listener);
     }
-  } else if (typeof list !== &#x27;function&#x27;) {
+  } else if (typeof list !== 'function') {
     position = -1;
 
-    for (i = list.length; i-- &#x3e; 0;) {
+    for (i = list.length; i-- &gt; 0;) {
       if (list[i] === listener || list[i].listener === listener) {
         originalListener = list[i].listener;
         position = i;
@@ -5137,7 +5130,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
       }
     }
 
-    if (position &#x3c; 0)
+    if (position &lt; 0)
       return this;
 
     if (list.length === 1) {
@@ -5153,7 +5146,7 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     }
 
     if (events.removeListener)
-      this.emit(&#x27;removeListener&#x27;, type, originalListener || listener);
+      this.emit('removeListener', type, originalListener || listener);
   }
 
   return this;
@@ -5195,18 +5188,18 @@ if (typeof arguments[pos] === &#x27;function&#x27;) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function run() { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.<span class="apidocCodeKeywordSpan">run</span>(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.<span class="apidocCodeKeywordSpan">run</span>("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 }
 stmt.finalize();
 ...</pre></li>
@@ -5227,8 +5220,8 @@ stmt.finalize();
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Database = function (file, a, b) {
-    if (file === &#x27;&#x27; || file === &#x27;:memory:&#x27;) {
-        // Don&#x27;t cache special databases.
+    if (file === '' || file === ':memory:') {
+        // Don't cache special databases.
         return new Database(file, a, b);
     }
 
@@ -5242,10 +5235,10 @@ stmt.finalize();
     else {
         // Make sure the callback is called.
         db = sqlite3.cached.objects[file];
-        var callback = (typeof a === &#x27;number&#x27;) ? b : a;
-        if (typeof callback === &#x27;function&#x27;) {
+        var callback = (typeof a === 'number') ? b : a;
+        if (typeof callback === 'function') {
             if (db.open) process.nextTick(cb);
-            else db.once(&#x27;open&#x27;, cb);
+            else db.once('open', cb);
         }
     }
 
@@ -5255,18 +5248,18 @@ stmt.finalize();
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 ...</pre></li>
     </ul>
 
@@ -5287,8 +5280,8 @@ for (var i = 0; i &#x3c; 10; i++) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">Database = function (file, a, b) {
-    if (file === &#x27;&#x27; || file === &#x27;:memory:&#x27;) {
-        // Don&#x27;t cache special databases.
+    if (file === '' || file === ':memory:') {
+        // Don't cache special databases.
         return new Database(file, a, b);
     }
 
@@ -5302,10 +5295,10 @@ for (var i = 0; i &#x3c; 10; i++) {
     else {
         // Make sure the callback is called.
         db = sqlite3.cached.objects[file];
-        var callback = (typeof a === &#x27;number&#x27;) ? b : a;
-        if (typeof callback === &#x27;function&#x27;) {
+        var callback = (typeof a === 'number') ? b : a;
+        if (typeof callback === 'function') {
             if (db.open) process.nextTick(cb);
-            else db.once(&#x27;open&#x27;, cb);
+            else db.once('open', cb);
         }
     }
 
@@ -5315,18 +5308,18 @@ for (var i = 0; i &#x3c; 10; i++) {
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).verbose();
-var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.<span class="apidocCodeKeywordSpan">Database</span>(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
-    stmt.run(&#x22;Ipsum &#x22; + i);
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
+    stmt.run("Ipsum " + i);
 ...</pre></li>
     </ul>
 
@@ -5348,23 +5341,23 @@ for (var i = 0; i &#x3c; 10; i++) {
     var old = object[property];
     object[property] = function() {
         var error = new Error();
-        var name = object.constructor.name + &#x27;#&#x27; + property + &#x27;(&#x27; +
+        var name = object.constructor.name + '#' + property + '(' +
             Array.prototype.slice.call(arguments).map(function(el) {
                 return util.inspect(el, false, 0);
-            }).join(&#x27;, &#x27;) + &#x27;)&#x27;;
+            }).join(', ') + ')';
 
-        if (typeof pos === &#x27;undefined&#x27;) pos = -1;
-        if (pos &#x3c; 0) pos += arguments.length;
+        if (typeof pos === 'undefined') pos = -1;
+        if (pos &lt; 0) pos += arguments.length;
         var cb = arguments[pos];
-        if (typeof arguments[pos] === &#x27;function&#x27;) {
+        if (typeof arguments[pos] === 'function') {
             arguments[pos] = function replacement() {
                 try {
                     return cb.apply(this, arguments);
                 } catch (err) {
-                    if (err &#x26;&#x26; err.stack &#x26;&#x26; !err.__augmented) {
-                        err.stack = filter(err).join(&#x27;\n&#x27;);
-                        err.stack += &#x27;\n--&#x3e; in &#x27; + name;
-                        err.stack += &#x27;\n&#x27; + filter(error).slice(1).join(&#x27;\n&#x27;);
+                    if (err &amp;&amp; err.stack &amp;&amp; !err.__augmented) {
+                        err.stack = filter(err).join('\n');
+                        err.stack += '\n--&gt; in ' + name;
+                        err.stack += '\n' + filter(error).slice(1).join('\n');
                         err.__augmented = true;
                     }
                     throw err;
@@ -5393,28 +5386,28 @@ for (var i = 0; i &#x3c; 10; i++) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">verbose = function () {
     if (!isVerbose) {
-        var trace = require(&#x27;./trace&#x27;);
+        var trace = require('./trace');
         [
-            &#x27;prepare&#x27;,
-            &#x27;get&#x27;,
-            &#x27;run&#x27;,
-            &#x27;all&#x27;,
-            &#x27;each&#x27;,
-            &#x27;map&#x27;,
-            &#x27;close&#x27;,
-            &#x27;exec&#x27;
+            'prepare',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'close',
+            'exec'
         ].forEach(function (name) {
             trace.extendTrace(Database.prototype, name);
         });
         [
-            &#x27;bind&#x27;,
-            &#x27;get&#x27;,
-            &#x27;run&#x27;,
-            &#x27;all&#x27;,
-            &#x27;each&#x27;,
-            &#x27;map&#x27;,
-            &#x27;reset&#x27;,
-            &#x27;finalize&#x27;,
+            'bind',
+            'get',
+            'run',
+            'all',
+            'each',
+            'map',
+            'reset',
+            'finalize',
         ].forEach(function (name) {
             trace.extendTrace(Statement.prototype, name);
         });
@@ -5424,22 +5417,22 @@ for (var i = 0; i &#x3c; 10; i++) {
     return this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-SQLite&#x27;s [SQLCipher extension](https://github.com/sqlcipher/sqlcipher) is also supported. [(See below.)](#building-for-sqlcipher
+SQLite's [SQLCipher extension](https://github.com/sqlcipher/sqlcipher) isÂ&nbsp;also supported. [(SeeÂ&nbsp;below.)](#building-for-sqlcipher
 )
 
 # Usage
 
-**Note:** the module must be [installed](#installing) before use.
+**Note:** theÂ&nbsp;module mustÂ&nbsp;be [installed](#installing) beforeÂ&nbsp;use.
 
 ``` js
-var sqlite3 = require(&#x27;sqlite3&#x27;).<span class="apidocCodeKeywordSpan">verbose</span>();
-var db = new sqlite3.Database(&#x27;:memory:&#x27;);
+var sqlite3 = require('sqlite3').<span class="apidocCodeKeywordSpan">verbose</span>();
+var db = new sqlite3.Database(':memory:');
 
 db.serialize(function() {
-db.run(&#x22;CREATE TABLE lorem (info TEXT)&#x22;);
+db.run("CREATE TABLE lorem (info TEXT)");
 
-var stmt = db.prepare(&#x22;INSERT INTO lorem VALUES (?)&#x22;);
-for (var i = 0; i &#x3c; 10; i++) {
+var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+for (var i = 0; i &lt; 10; i++) {
 ...</pre></li>
     </ul>
 
@@ -5452,3 +5445,4 @@ for (var i = 0; i &#x3c; 10; i++) {
     ]
 </div>
 </div>
+</body></html>
