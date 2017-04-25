@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "sqlite3",
-    "description": "api documentation for [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3) [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)",
+    "description": "#### basic api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "sqlite3": "*",

@@ -1,4 +1,7 @@
-# api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
+# npmdoc-sqlite3
+
+#### basic api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
+
 #### Asynchronous, non-blocking SQLite3 bindings
 
 [![NPM](https://nodei.co/npm/sqlite3.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sqlite3)
@@ -136,7 +139,8 @@
         "pretest": "node test/support/createdb.js",
         "test": "mocha -R spec --timeout 480000"
     },
-    "version": "3.1.8"
+    "version": "3.1.8",
+    "bin": {}
 }
 ```
 
