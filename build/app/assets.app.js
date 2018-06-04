@@ -33033,7 +33033,7 @@ local.stateInit({
             "npm_package_homepage": "https://github.com/npmdoc/node-npmdoc-sqlite3",
             "npm_package_name": "npmdoc-sqlite3",
             "npm_package_nameLib": "npmdoc_sqlite3",
-            "npm_package_version": "2018.6.4"
+            "npm_package_version": "0.0.4"
         }
     }
 });

@@ -1,0 +1,145 @@
+<svg height="1150" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1150" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">npm install - 9 megabytes</tspan>
+
+<tspan x="10" y="42"></tspan>
+
+<tspan x="10" y="58">node_modules</tspan>
+
+<tspan x="10" y="74">└─┬ sqlite3@4.0.0</tspan>
+
+<tspan x="10" y="90">  ├── nan@2.9.2</tspan>
+
+<tspan x="10" y="106">  └─┬ node-pre-gyp@0.9.0</tspan>
+
+<tspan x="10" y="122">    ├── detect-libc@1.0.3</tspan>
+
+<tspan x="10" y="138">    ├─┬ mkdirp@0.5.1</tspan>
+
+<tspan x="10" y="154">    │ └── minimist@0.0.8</tspan>
+
+<tspan x="10" y="170">    ├─┬ needle@2.2.0</tspan>
+
+<tspan x="10" y="186">    │ ├─┬ debug@2.6.9</tspan>
+
+<tspan x="10" y="202">    │ │ └── ms@2.0.0</tspan>
+
+<tspan x="10" y="218">    │ ├── iconv-lite@0.4.19</tspan>
+
+<tspan x="10" y="234">    │ └── sax@1.2.4</tspan>
+
+<tspan x="10" y="250">    ├─┬ nopt@4.0.1</tspan>
+
+<tspan x="10" y="266">    │ ├── abbrev@1.1.1</tspan>
+
+<tspan x="10" y="282">    │ └─┬ osenv@0.1.5</tspan>
+
+<tspan x="10" y="298">    │   ├── os-homedir@1.0.2</tspan>
+
+<tspan x="10" y="314">    │   └── os-tmpdir@1.0.2</tspan>
+
+<tspan x="10" y="330">    ├─┬ npm-packlist@1.1.10</tspan>
+
+<tspan x="10" y="346">    │ ├─┬ ignore-walk@3.0.1</tspan>
+
+<tspan x="10" y="362">    │ │ └─┬ minimatch@3.0.4</tspan>
+
+<tspan x="10" y="378">    │ │   └─┬ brace-expansion@1.1.11</tspan>
+
+<tspan x="10" y="394">    │ │     ├── balanced-match@1.0.0</tspan>
+
+<tspan x="10" y="410">    │ │     └── concat-map@0.0.1</tspan>
+
+<tspan x="10" y="426">    │ └── npm-bundled@1.0.3</tspan>
+
+<tspan x="10" y="442">    ├─┬ npmlog@4.1.2</tspan>
+
+<tspan x="10" y="458">    │ ├─┬ are-we-there-yet@1.1.4</tspan>
+
+<tspan x="10" y="474">    │ │ ├── delegates@1.0.0</tspan>
+
+<tspan x="10" y="490">    │ │ └─┬ readable-stream@2.3.5</tspan>
+
+<tspan x="10" y="506">    │ │   ├── core-util-is@1.0.2</tspan>
+
+<tspan x="10" y="522">    │ │   ├── isarray@1.0.0</tspan>
+
+<tspan x="10" y="538">    │ │   ├── process-nextick-args@2.0.0</tspan>
+
+<tspan x="10" y="554">    │ │   ├── safe-buffer@5.1.1</tspan>
+
+<tspan x="10" y="570">    │ │   ├── string_decoder@1.0.3</tspan>
+
+<tspan x="10" y="586">    │ │   └── util-deprecate@1.0.2</tspan>
+
+<tspan x="10" y="602">    │ ├── console-control-strings@1.1.0</tspan>
+
+<tspan x="10" y="618">    │ ├─┬ gauge@2.7.4</tspan>
+
+<tspan x="10" y="634">    │ │ ├── aproba@1.2.0</tspan>
+
+<tspan x="10" y="650">    │ │ ├── has-unicode@2.0.1</tspan>
+
+<tspan x="10" y="666">    │ │ ├── object-assign@4.1.1</tspan>
+
+<tspan x="10" y="682">    │ │ ├── signal-exit@3.0.2</tspan>
+
+<tspan x="10" y="698">    │ │ ├─┬ string-width@1.0.2</tspan>
+
+<tspan x="10" y="714">    │ │ │ ├── code-point-at@1.1.0</tspan>
+
+<tspan x="10" y="730">    │ │ │ └─┬ is-fullwidth-code-point@1.0.0</tspan>
+
+<tspan x="10" y="746">    │ │ │   └── number-is-nan@1.0.1</tspan>
+
+<tspan x="10" y="762">    │ │ ├─┬ strip-ansi@3.0.1</tspan>
+
+<tspan x="10" y="778">    │ │ │ └── ansi-regex@2.1.1</tspan>
+
+<tspan x="10" y="794">    │ │ └── wide-align@1.1.2</tspan>
+
+<tspan x="10" y="810">    │ └── set-blocking@2.0.0</tspan>
+
+<tspan x="10" y="826">    ├─┬ rc@1.2.6</tspan>
+
+<tspan x="10" y="842">    │ ├── deep-extend@0.4.2</tspan>
+
+<tspan x="10" y="858">    │ ├── ini@1.3.5</tspan>
+
+<tspan x="10" y="874">    │ ├── minimist@1.2.0</tspan>
+
+<tspan x="10" y="890">    │ └── strip-json-comments@2.0.1</tspan>
+
+<tspan x="10" y="906">    ├─┬ rimraf@2.6.2</tspan>
+
+<tspan x="10" y="922">    │ └─┬ glob@7.1.2</tspan>
+
+<tspan x="10" y="938">    │   ├── fs.realpath@1.0.0</tspan>
+
+<tspan x="10" y="954">    │   ├─┬ inflight@1.0.6</tspan>
+
+<tspan x="10" y="970">    │   │ └── wrappy@1.0.2</tspan>
+
+<tspan x="10" y="986">    │   ├── inherits@2.0.3</tspan>
+
+<tspan x="10" y="1002">    │   ├── once@1.4.0</tspan>
+
+<tspan x="10" y="1018">    │   └── path-is-absolute@1.0.1</tspan>
+
+<tspan x="10" y="1034">    ├── semver@5.5.0</tspan>
+
+<tspan x="10" y="1050">    └─┬ tar@4.4.0</tspan>
+
+<tspan x="10" y="1066">      ├── chownr@1.0.1</tspan>
+
+<tspan x="10" y="1082">      ├── fs-minipass@1.2.5</tspan>
+
+<tspan x="10" y="1098">      ├── minipass@2.2.1</tspan>
+
+<tspan x="10" y="1114">      ├── minizlib@1.1.0</tspan>
+
+<tspan x="10" y="1130">      └── yallist@3.0.2</tspan>
+
+</text>
+</svg>
