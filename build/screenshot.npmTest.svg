@@ -1,0 +1,604 @@
+<svg height="6126" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="6126" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-06-04T08:09:47.302Z - npm-testing /home/travis/build/npmdoc/node-npm\</tspan>
+<tspan x="10" y="58">doc-sqlite3</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106">npmTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/t\</tspan>
+<tspan x="10" y="122">est-report.json</tspan>
+
+<tspan x="10" y="138">&gt; server listening on http-port 37239</tspan>
+
+<tspan x="10" y="154">[node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="186">ckage.json</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/ap\</tspan>
+<tspan x="10" y="218">pveyor.yml</tspan>
+
+<tspan x="10" y="234">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/bi\</tspan>
+<tspan x="10" y="250">nding.gyp</tspan>
+
+<tspan x="10" y="266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CH\</tspan>
+<tspan x="10" y="282">ANGELOG.md</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CO\</tspan>
+<tspan x="10" y="314">NTRIBUTING.md</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/el\</tspan>
+<tspan x="10" y="346">ectron.sh</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/LI\</tspan>
+<tspan x="10" y="378">CENSE</tspan>
+
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="410">ckage.json</tspan>
+
+<tspan x="10" y="426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/RE\</tspan>
+<tspan x="10" y="442">ADME.md</tspan>
+
+<tspan x="10" y="458">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sq\</tspan>
+<tspan x="10" y="474">lite3.js</tspan>
+
+<tspan x="10" y="490">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="506">ps/common-sqlite.gypi</tspan>
+
+<tspan x="10" y="522">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="538">ps/extract.py</tspan>
+
+<tspan x="10" y="554">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="570">ps/sqlite3.gyp</tspan>
+
+<tspan x="10" y="586">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="602">ps/sqlite-autoconf-3150000.tar.gz</tspan>
+
+<tspan x="10" y="618">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="634">b/index.js</tspan>
+
+<tspan x="10" y="650">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="666">b/sqlite3.js</tspan>
+
+<tspan x="10" y="682">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="698">b/trace.js</tspan>
+
+<tspan x="10" y="714">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="730">c/async.h</tspan>
+
+<tspan x="10" y="746">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="762">c/database.cc</tspan>
+
+<tspan x="10" y="778">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="794">c/database.h</tspan>
+
+<tspan x="10" y="810">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="826">c/gcc-preinclude.h</tspan>
+
+<tspan x="10" y="842">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="858">c/macros.h</tspan>
+
+<tspan x="10" y="874">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="890">c/node_sqlite3.cc</tspan>
+
+<tspan x="10" y="906">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="922">c/statement.cc</tspan>
+
+<tspan x="10" y="938">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="954">c/statement.h</tspan>
+
+<tspan x="10" y="970">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="986">c/threading.h</tspan>
+
+<tspan x="10" y="1002">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="1018">b/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
+
+<tspan x="10" y="1034">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3 ...</tspan>
+
+<tspan x="10" y="1050">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3</tspan>
+
+<tspan x="10" y="1066">apidocCreate - libFile sqlite3.js</tspan>
+
+<tspan x="10" y="1082">apidocCreate - libFile lib/index.js</tspan>
+
+<tspan x="10" y="1098">apidocCreate - libFile lib/trace.js</tspan>
+
+<tspan x="10" y="1114">created apidoc file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="1130"></tspan>
+
+<tspan x="10" y="1146">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="1162">ckage.json</tspan>
+
+<tspan x="10" y="1178">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/ap\</tspan>
+<tspan x="10" y="1194">pveyor.yml</tspan>
+
+<tspan x="10" y="1210">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/bi\</tspan>
+<tspan x="10" y="1226">nding.gyp</tspan>
+
+<tspan x="10" y="1242">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CH\</tspan>
+<tspan x="10" y="1258">ANGELOG.md</tspan>
+
+<tspan x="10" y="1274">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CO\</tspan>
+<tspan x="10" y="1290">NTRIBUTING.md</tspan>
+
+<tspan x="10" y="1306">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/el\</tspan>
+<tspan x="10" y="1322">ectron.sh</tspan>
+
+<tspan x="10" y="1338">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/LI\</tspan>
+<tspan x="10" y="1354">CENSE</tspan>
+
+<tspan x="10" y="1370">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="1386">ckage.json</tspan>
+
+<tspan x="10" y="1402">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/RE\</tspan>
+<tspan x="10" y="1418">ADME.md</tspan>
+
+<tspan x="10" y="1434">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sq\</tspan>
+<tspan x="10" y="1450">lite3.js</tspan>
+
+<tspan x="10" y="1466">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="1482">ps/common-sqlite.gypi</tspan>
+
+<tspan x="10" y="1498">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="1514">ps/extract.py</tspan>
+
+<tspan x="10" y="1530">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="1546">ps/sqlite3.gyp</tspan>
+
+<tspan x="10" y="1562">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="1578">ps/sqlite-autoconf-3150000.tar.gz</tspan>
+
+<tspan x="10" y="1594">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="1610">b/index.js</tspan>
+
+<tspan x="10" y="1626">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="1642">b/sqlite3.js</tspan>
+
+<tspan x="10" y="1658">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="1674">b/trace.js</tspan>
+
+<tspan x="10" y="1690">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1706">c/async.h</tspan>
+
+<tspan x="10" y="1722">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1738">c/database.cc</tspan>
+
+<tspan x="10" y="1754">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1770">c/database.h</tspan>
+
+<tspan x="10" y="1786">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1802">c/gcc-preinclude.h</tspan>
+
+<tspan x="10" y="1818">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1834">c/macros.h</tspan>
+
+<tspan x="10" y="1850">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1866">c/node_sqlite3.cc</tspan>
+
+<tspan x="10" y="1882">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1898">c/statement.cc</tspan>
+
+<tspan x="10" y="1914">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1930">c/statement.h</tspan>
+
+<tspan x="10" y="1946">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="1962">c/threading.h</tspan>
+
+<tspan x="10" y="1978">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="1994">b/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
+
+<tspan x="10" y="2010">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3 ...</tspan>
+
+<tspan x="10" y="2026">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3</tspan>
+
+<tspan x="10" y="2042">apidocCreate - libFile sqlite3.js</tspan>
+
+<tspan x="10" y="2058">apidocCreate - libFile lib/index.js</tspan>
+
+<tspan x="10" y="2074">apidocCreate - libFile lib/trace.js</tspan>
+
+<tspan x="10" y="2090">created customOrg file /home/travis/build/npmdoc/node-npmdoc-sqlite3/README.md</tspan>
+
+<tspan x="10" y="2106"></tspan>
+
+<tspan x="10" y="2122">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="2138">ckage.json</tspan>
+
+<tspan x="10" y="2154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/ap\</tspan>
+<tspan x="10" y="2170">pveyor.yml</tspan>
+
+<tspan x="10" y="2186">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/bi\</tspan>
+<tspan x="10" y="2202">nding.gyp</tspan>
+
+<tspan x="10" y="2218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CH\</tspan>
+<tspan x="10" y="2234">ANGELOG.md</tspan>
+
+<tspan x="10" y="2250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CO\</tspan>
+<tspan x="10" y="2266">NTRIBUTING.md</tspan>
+
+<tspan x="10" y="2282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/el\</tspan>
+<tspan x="10" y="2298">ectron.sh</tspan>
+
+<tspan x="10" y="2314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/LI\</tspan>
+<tspan x="10" y="2330">CENSE</tspan>
+
+<tspan x="10" y="2346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="2362">ckage.json</tspan>
+
+<tspan x="10" y="2378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/RE\</tspan>
+<tspan x="10" y="2394">ADME.md</tspan>
+
+<tspan x="10" y="2410">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sq\</tspan>
+<tspan x="10" y="2426">lite3.js</tspan>
+
+<tspan x="10" y="2442">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="2458">ps/common-sqlite.gypi</tspan>
+
+<tspan x="10" y="2474">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="2490">ps/extract.py</tspan>
+
+<tspan x="10" y="2506">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="2522">ps/sqlite3.gyp</tspan>
+
+<tspan x="10" y="2538">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="2554">ps/sqlite-autoconf-3150000.tar.gz</tspan>
+
+<tspan x="10" y="2570">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="2586">b/index.js</tspan>
+
+<tspan x="10" y="2602">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="2618">b/sqlite3.js</tspan>
+
+<tspan x="10" y="2634">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="2650">b/trace.js</tspan>
+
+<tspan x="10" y="2666">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2682">c/async.h</tspan>
+
+<tspan x="10" y="2698">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2714">c/database.cc</tspan>
+
+<tspan x="10" y="2730">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2746">c/database.h</tspan>
+
+<tspan x="10" y="2762">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2778">c/gcc-preinclude.h</tspan>
+
+<tspan x="10" y="2794">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2810">c/macros.h</tspan>
+
+<tspan x="10" y="2826">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2842">c/node_sqlite3.cc</tspan>
+
+<tspan x="10" y="2858">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2874">c/statement.cc</tspan>
+
+<tspan x="10" y="2890">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2906">c/statement.h</tspan>
+
+<tspan x="10" y="2922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="2938">c/threading.h</tspan>
+
+<tspan x="10" y="2954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="2970">b/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
+
+<tspan x="10" y="2986">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3 ...</tspan>
+
+<tspan x="10" y="3002">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3</tspan>
+
+<tspan x="10" y="3018">apidocCreate - libFile sqlite3.js</tspan>
+
+<tspan x="10" y="3034">apidocCreate - libFile lib/index.js</tspan>
+
+<tspan x="10" y="3050">apidocCreate - libFile lib/trace.js</tspan>
+
+<tspan x="10" y="3066">created apidoc file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="3082"></tspan>
+
+<tspan x="10" y="3098">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="3114">ckage.json</tspan>
+
+<tspan x="10" y="3130">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/ap\</tspan>
+<tspan x="10" y="3146">pveyor.yml</tspan>
+
+<tspan x="10" y="3162">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/bi\</tspan>
+<tspan x="10" y="3178">nding.gyp</tspan>
+
+<tspan x="10" y="3194">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CH\</tspan>
+<tspan x="10" y="3210">ANGELOG.md</tspan>
+
+<tspan x="10" y="3226">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/CO\</tspan>
+<tspan x="10" y="3242">NTRIBUTING.md</tspan>
+
+<tspan x="10" y="3258">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/el\</tspan>
+<tspan x="10" y="3274">ectron.sh</tspan>
+
+<tspan x="10" y="3290">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/LI\</tspan>
+<tspan x="10" y="3306">CENSE</tspan>
+
+<tspan x="10" y="3322">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
+<tspan x="10" y="3338">ckage.json</tspan>
+
+<tspan x="10" y="3354">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/RE\</tspan>
+<tspan x="10" y="3370">ADME.md</tspan>
+
+<tspan x="10" y="3386">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sq\</tspan>
+<tspan x="10" y="3402">lite3.js</tspan>
+
+<tspan x="10" y="3418">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="3434">ps/common-sqlite.gypi</tspan>
+
+<tspan x="10" y="3450">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="3466">ps/extract.py</tspan>
+
+<tspan x="10" y="3482">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="3498">ps/sqlite3.gyp</tspan>
+
+<tspan x="10" y="3514">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/de\</tspan>
+<tspan x="10" y="3530">ps/sqlite-autoconf-3150000.tar.gz</tspan>
+
+<tspan x="10" y="3546">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="3562">b/index.js</tspan>
+
+<tspan x="10" y="3578">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="3594">b/sqlite3.js</tspan>
+
+<tspan x="10" y="3610">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="3626">b/trace.js</tspan>
+
+<tspan x="10" y="3642">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3658">c/async.h</tspan>
+
+<tspan x="10" y="3674">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3690">c/database.cc</tspan>
+
+<tspan x="10" y="3706">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3722">c/database.h</tspan>
+
+<tspan x="10" y="3738">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3754">c/gcc-preinclude.h</tspan>
+
+<tspan x="10" y="3770">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3786">c/macros.h</tspan>
+
+<tspan x="10" y="3802">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3818">c/node_sqlite3.cc</tspan>
+
+<tspan x="10" y="3834">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3850">c/statement.cc</tspan>
+
+<tspan x="10" y="3866">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3882">c/statement.h</tspan>
+
+<tspan x="10" y="3898">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/sr\</tspan>
+<tspan x="10" y="3914">c/threading.h</tspan>
+
+<tspan x="10" y="3930">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/li\</tspan>
+<tspan x="10" y="3946">b/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
+
+<tspan x="10" y="3962">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3 ...</tspan>
+
+<tspan x="10" y="3978">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3</tspan>
+
+<tspan x="10" y="3994">apidocCreate - libFile sqlite3.js</tspan>
+
+<tspan x="10" y="4010">apidocCreate - libFile lib/index.js</tspan>
+
+<tspan x="10" y="4026">apidocCreate - libFile lib/trace.js</tspan>
+
+<tspan x="10" y="4042">created customOrg file /home/travis/build/npmdoc/node-npmdoc-sqlite3/README.md</tspan>
+
+<tspan x="10" y="4058"></tspan>
+
+<tspan x="10" y="4074">[node test-case 2 of 8 passed] - testCase_buildLib_default</tspan>
+
+<tspan x="10" y="4090">[node test-case 3 of 8 passed] - testCase_buildReadme_default</tspan>
+
+<tspan x="10" y="4106">[node test-case 4 of 8 passed] - testCase_buildTest_default</tspan>
+
+<tspan x="10" y="4122">[node test-case 5 of 8 passed] - testCase_nop_default</tspan>
+
+<tspan x="10" y="4138"></tspan>
+
+<tspan x="10" y="4154">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/elec\</tspan>
+<tspan x="10" y="4170">tron.163c9d8582d0.ebd5c883fcecb.html</tspan>
+
+<tspan x="10" y="4186"></tspan>
+
+<tspan x="10" y="4202">(node:4609) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
+<tspan x="10" y="4218">e.</tspan>
+
+<tspan x="10" y="4234">(node:4609) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+
+<tspan x="10" y="4250">[node test-case 6 of 8 passed] - testCase_buildCustomOrg_default</tspan>
+
+<tspan x="10" y="4266">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="4282">&gt; server listening on http-port 47452</tspan>
+
+<tspan x="10" y="4298">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="4314">[4821:0604/080949.962113:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="4330">ted</tspan>
+
+<tspan x="10" y="4346">[4821:0604/080949.962187:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="4362">ted</tspan>
+
+<tspan x="10" y="4378">[4856:0604/080950.022356:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="4394">hreads in process gpu-process. </tspan>
+
+<tspan x="10" y="4410">[4821:0604/080950.124743:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="4426">l.</tspan>
+
+<tspan x="10" y="4442">[4821:0604/080950.125607:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="4458">l.</tspan>
+
+<tspan x="10" y="4474">[4821:0604/080950.126587:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="4490">l.</tspan>
+
+<tspan x="10" y="4506">[4821:0604/080950.129027:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="4522">l.</tspan>
+
+<tspan x="10" y="4538">[4821:0604/080950.129215:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="4554">l.</tspan>
+
+<tspan x="10" y="4570"></tspan>
+
+<tspan x="10" y="4586">browserTest - opened http://127.0.0.1:37239?modeTest=1&amp;timeoutDefault=120000</tspan>
+
+<tspan x="10" y="4602"></tspan>
+
+<tspan x="10" y="4618">[4821:0604/080950.857057:INFO:CONSOLE(266)] "[browser test-case 1 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="4634">pidoc_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d\</tspan>
+<tspan x="10" y="4650">8582d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4666">[4821:0604/080950.873497:INFO:CONSOLE(266)] "[browser test-case 2 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="4682">pp_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d858\</tspan>
+<tspan x="10" y="4698">2d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4714">[4821:0604/080950.876025:INFO:CONSOLE(266)] "[browser test-case 3 of 8 passed] - testCase_buildC\</tspan>
+<tspan x="10" y="4730">ustomOrg_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163\</tspan>
+<tspan x="10" y="4746">c9d8582d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4762">[4821:0604/080950.877577:INFO:CONSOLE(266)] "[browser test-case 4 of 8 passed] - testCase_buildL\</tspan>
+<tspan x="10" y="4778">ib_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d858\</tspan>
+<tspan x="10" y="4794">2d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4810">[4821:0604/080950.879413:INFO:CONSOLE(266)] "[browser test-case 5 of 8 passed] - testCase_buildR\</tspan>
+<tspan x="10" y="4826">eadme_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d\</tspan>
+<tspan x="10" y="4842">8582d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4858">[4821:0604/080950.880932:INFO:CONSOLE(266)] "[browser test-case 6 of 8 passed] - testCase_buildT\</tspan>
+<tspan x="10" y="4874">est_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d85\</tspan>
+<tspan x="10" y="4890">82d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4906">[4821:0604/080950.882864:INFO:CONSOLE(266)] "[browser test-case 7 of 8 passed] - testCase_nop_de\</tspan>
+<tspan x="10" y="4922">fault", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.e\</tspan>
+<tspan x="10" y="4938">bd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="4954">[4821:0604/080950.887092:INFO:CONSOLE(266)] "domStyleValidateUnmatched 0. 0 .testReportDiv .test\</tspan>
+<tspan x="10" y="4970">Failed {", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d\</tspan>
+<tspan x="10" y="4986">0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="5002">[4821:0604/080950.888797:INFO:CONSOLE(266)] "domStyleValidateUnmatched 1. 0 .testReportDiv img {\</tspan>
+<tspan x="10" y="5018">", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c8\</tspan>
+<tspan x="10" y="5034">83fcecb.html (266)</tspan>
+
+<tspan x="10" y="5050">[4821:0604/080950.890089:INFO:CONSOLE(266)] "domStyleValidateUnmatched 2. 1 .testReportDiv .disp\</tspan>
+<tspan x="10" y="5066">layNone {", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582\</tspan>
+<tspan x="10" y="5082">d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="5098">[4821:0604/080950.895952:INFO:CONSOLE(266)] "domStyleValidateUnmatched 3. 1 .testReportDiv .foot\</tspan>
+<tspan x="10" y="5114">er {", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.eb\</tspan>
+<tspan x="10" y="5130">d5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="5146">[4821:0604/080950.896390:INFO:CONSOLE(266)] "domStyleValidateUnmatched 4. 1 .testReportDiv .summ\</tspan>
+<tspan x="10" y="5162">ary {", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.e\</tspan>
+<tspan x="10" y="5178">bd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="5194">[4821:0604/080950.896432:INFO:CONSOLE(266)] "domStyleValidateUnmatched 5. 1 .testReportDiv pre {\</tspan>
+<tspan x="10" y="5210">", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c8\</tspan>
+<tspan x="10" y="5226">83fcecb.html (266)</tspan>
+
+<tspan x="10" y="5242">[4821:0604/080950.896945:INFO:CONSOLE(266)] "domStyleValidateUnmatched 6. 1 body &gt; pre,", source\</tspan>
+<tspan x="10" y="5258">: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c883fcecb.h\</tspan>
+<tspan x="10" y="5274">tml (266)</tspan>
+
+<tspan x="10" y="5290">[4821:0604/080950.896970:INFO:CONSOLE(266)] "domStyleValidateUnmatched 7. 1 body &gt; pre,", source\</tspan>
+<tspan x="10" y="5306">: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c883fcecb.h\</tspan>
+<tspan x="10" y="5322">tml (266)</tspan>
+
+<tspan x="10" y="5338">[4821:0604/080950.898684:INFO:CONSOLE(266)] "domStyleValidateUnmatched 8. 1 body {", source: fil\</tspan>
+<tspan x="10" y="5354">e:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c883fcecb.html (\</tspan>
+<tspan x="10" y="5370">266)</tspan>
+
+<tspan x="10" y="5386">[4821:0604/080950.900684:INFO:CONSOLE(266)] "domStyleValidateUnmatched 9. 1 body {", source: fil\</tspan>
+<tspan x="10" y="5402">e:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582d0.ebd5c883fcecb.html (\</tspan>
+<tspan x="10" y="5418">266)</tspan>
+
+<tspan x="10" y="5434">[4821:0604/080950.902850:INFO:CONSOLE(266)] "[browser test-case 8 of 8 passed] - testCase_webpag\</tspan>
+<tspan x="10" y="5450">e_default", source: file:///home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/electron.163c9d8582\</tspan>
+<tspan x="10" y="5466">d0.ebd5c883fcecb.html (266)</tspan>
+
+<tspan x="10" y="5482">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="5498"></tspan>
+
+<tspan x="10" y="5514">browserTest - created screenshot file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/sc\</tspan>
+<tspan x="10" y="5530">reenshot.npmTest.browser.%2F.png</tspan>
+
+<tspan x="10" y="5546"></tspan>
+
+<tspan x="10" y="5562">browserTest - created screenshot file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/sc\</tspan>
+<tspan x="10" y="5578">reenshot.npmTest.browser.%2F.html</tspan>
+
+<tspan x="10" y="5594"></tspan>
+
+<tspan x="10" y="5610">browserTest - exit-code 0 - http://127.0.0.1:37239?modeTest=1&amp;timeoutDefault=120000</tspan>
+
+<tspan x="10" y="5626"></tspan>
+
+<tspan x="10" y="5642"></tspan>
+
+<tspan x="10" y="5658">browserTest - merged coverage from file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/covera\</tspan>
+<tspan x="10" y="5674">ge.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="5690"></tspan>
+
+<tspan x="10" y="5706"></tspan>
+
+<tspan x="10" y="5722">browserTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/tes\</tspan>
+<tspan x="10" y="5738">t-report.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="5754"></tspan>
+
+<tspan x="10" y="5770">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+
+<tspan x="10" y="5786"></tspan>
+
+<tspan x="10" y="5802">npmTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/t\</tspan>
+<tspan x="10" y="5818">est-report.json</tspan>
+
+<tspan x="10" y="5834"></tspan>
+
+<tspan x="10" y="5850">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="5866">| test-report - buildApp - node - linux v6.14.2 - 2018-06-04T08:09:38.150Z</tspan>
+
+<tspan x="10" y="5882">|   27260 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="5898">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="5914">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="5930">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-04T08:09:50.795Z</tspan>
+
+<tspan x="10" y="5946">|      56 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="5962">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="5978"></tspan>
+
+<tspan x="10" y="5994">created test-report file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/test-report.htm\</tspan>
+<tspan x="10" y="6010">l</tspan>
+
+<tspan x="10" y="6026"></tspan>
+
+<tspan x="10" y="6042"></tspan>
+
+<tspan x="10" y="6058">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="6074"></tspan>
+
+<tspan x="10" y="6090"></tspan>
+
+<tspan x="10" y="6106">[MODE_BUILD=npmTest] - 2018-06-04T08:10:06.951Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>
