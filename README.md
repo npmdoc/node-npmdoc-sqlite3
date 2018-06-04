@@ -1,6 +1,6 @@
 # npmdoc-sqlite3
 
-#### basic api documentation for  [sqlite3 (v3.1.8)](http://github.com/mapbox/node-sqlite3)  [![npm package](https://img.shields.io/npm/v/npmdoc-sqlite3.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sqlite3) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
+#### basic api documentation for  [sqlite3 (4.0.0)](http://github.com/mapbox/node-sqlite3)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sqlite3.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sqlite3)
 
 #### Asynchronous, non-blocking SQLite3 bindings
 
@@ -8,11 +8,11 @@
 
 - [https://npmdoc.github.io/node-npmdoc-sqlite3/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-sqlite3/build/apidoc.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sqlite3/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sqlite3/build/apidoc.html)
 
-![npmPackageListing](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenshot.npmPackageListing.svg)
 
-![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenCapture.npmPackageDependencyTree.svg)
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-sqlite3/build/screenshot.npmPackageDependencyTree.svg)
 
 
 
@@ -89,8 +89,8 @@
         }
     ],
     "dependencies": {
-        "nan": "~2.4.0",
-        "node-pre-gyp": "~0.6.31"
+        "nan": "~2.9.2",
+        "node-pre-gyp": "~0.9.0"
     },
     "description": "Asynchronous, non-blocking SQLite3 bindings",
     "devDependencies": {
@@ -100,10 +100,13 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "4cbcf965d8b901d1b1015cbc7fc415aae157dfaa",
-        "tarball": "https://registry.npmjs.org/sqlite3/-/sqlite3-3.1.8.tgz"
+        "integrity": "sha512-6OlcAQNGaRSBLK1CuaRbKwlMFBb9DEhzmZyQP+fltNRF6XcIMpVIfXCBEcXPe1d4v9LnhkQUYkknDbA5JReqJg==",
+        "shasum": "cc0e093ab51873f50d9dfc4126fcbef15d486570",
+        "tarball": "https://registry.npmjs.org/sqlite3/-/sqlite3-4.0.0.tgz",
+        "fileCount": 563,
+        "unpackedSize": 4502461
     },
-    "gitHead": "4800c6377ef15f467290d77776302b486e71ada3",
+    "gitHead": "d02f5c3b496aab1e10ba1f981b0a7f7a276894e7",
     "homepage": "http://github.com/mapbox/node-sqlite3",
     "keywords": [
         "sql",
@@ -118,13 +121,13 @@
             "name": "kkaefer"
         },
         {
-            "name": "yhahn"
+            "name": "springmeyer"
         },
         {
             "name": "tmcw"
         },
         {
-            "name": "springmeyer"
+            "name": "yhahn"
         }
     ],
     "name": "sqlite3",
@@ -135,11 +138,11 @@
     },
     "scripts": {
         "install": "node-pre-gyp install --fallback-to-build",
-        "prepublish": "npm ls",
+        "prepublishOnly": "npm ls",
         "pretest": "node test/support/createdb.js",
         "test": "mocha -R spec --timeout 480000"
     },
-    "version": "3.1.8",
+    "version": "4.0.0",
     "bin": {}
 }
 ```
