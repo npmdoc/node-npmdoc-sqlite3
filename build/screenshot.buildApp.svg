@@ -1,9 +1,9 @@
-<svg height="2766" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2766" fill="#555" width="720"></rect>
+<svg height="2638" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2638" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-10T17:58:26.585Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-10T18:03:04.599Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
 <tspan x="10" y="58">mdoc-sqlite3</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/\</tspan>
 <tspan x="10" y="122">test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 33219</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 61861</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-sqlite3/node_modules/sqlite3/pa\</tspan>
 <tspan x="10" y="170">ckage.json</tspan>
@@ -211,12 +211,12 @@
 
 <tspan x="10" y="2154"></tspan>
 
-<tspan x="10" y="2170">(node:10288) DeprecationWarning: _linklist module is deprecated. Please use a userland alternati\</tspan>
-<tspan x="10" y="2186">ve.</tspan>
+<tspan x="10" y="2170">(node:5882) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
+<tspan x="10" y="2186">e.</tspan>
 
-<tspan x="10" y="2202">(node:10288) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+<tspan x="10" y="2202">(node:5882) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
 
-<tspan x="10" y="2218">&gt; server listening on http-port 55647</tspan>
+<tspan x="10" y="2218">&gt; server listening on http-port 50573</tspan>
 
 <tspan x="10" y="2234">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
@@ -229,55 +229,41 @@
 
 <tspan x="10" y="2314">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2330">| test-report - buildApidoc - node - linux v6.14.2 - 2018-06-10T17:52:36.210Z</tspan>
+<tspan x="10" y="2330">| test-report - buildApidoc - node - linux v6.14.2 - 2018-06-10T18:02:37.285Z</tspan>
 
-<tspan x="10" y="2346">|  356698 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="2346">|   33640 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="2362">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2378">| test-report - buildApp - node - linux v6.14.2 - 2018-06-10T17:52:06.227Z</tspan>
+<tspan x="10" y="2378">| test-report - buildApp - node - linux v6.14.2 - 2018-06-10T18:02:06.518Z</tspan>
 
-<tspan x="10" y="2394">|   26995 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2394">|   27423 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="2410">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="2426">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2442">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T17:52:18.559Z</tspan>
+<tspan x="10" y="2442">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T18:02:19.294Z</tspan>
 
-<tspan x="10" y="2458">|      58 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2458">|      66 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="2474">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2490">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2506">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T17:54:32.894Z</tspan>
+<tspan x="10" y="2490"></tspan>
 
-<tspan x="10" y="2522">|      42 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2506">created test-report file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/test-report.htm\</tspan>
+<tspan x="10" y="2522">l</tspan>
 
-<tspan x="10" y="2538">-------------------------------------------------------</tspan>
+<tspan x="10" y="2538"></tspan>
 
-<tspan x="10" y="2554">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
-<tspan x="10" y="2570">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T17:57:42.579Z</tspan>
+<tspan x="10" y="2554"></tspan>
 
-<tspan x="10" y="2586">|      44 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="2570">buildApp - 0 failed tests</tspan>
 
-<tspan x="10" y="2602">-------------------------------------------------------</tspan>
+<tspan x="10" y="2586"></tspan>
 
-<tspan x="10" y="2618"></tspan>
+<tspan x="10" y="2602"></tspan>
 
-<tspan x="10" y="2634">created test-report file /home/travis/build/npmdoc/node-npmdoc-sqlite3/tmp/build/test-report.htm\</tspan>
-<tspan x="10" y="2650">l</tspan>
-
-<tspan x="10" y="2666"></tspan>
-
-<tspan x="10" y="2682"></tspan>
-
-<tspan x="10" y="2698">buildApp - 0 failed tests</tspan>
-
-<tspan x="10" y="2714"></tspan>
-
-<tspan x="10" y="2730"></tspan>
-
-<tspan x="10" y="2746">[MODE_BUILD=buildApp] - 2018-06-10T17:58:34.466Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2618">[MODE_BUILD=buildApp] - 2018-06-10T18:03:12.480Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
