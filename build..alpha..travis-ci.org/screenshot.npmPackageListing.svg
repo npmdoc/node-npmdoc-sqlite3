@@ -5,59 +5,59 @@
 
 <tspan x="10" y="42"></tspan>
 
-<tspan x="10" y="58">0.   2018-06-10 17:54:52 +0000  4337677 bytes  .</tspan>
+<tspan x="10" y="58">0.   2018-06-10 17:58:01 +0000  4337677 bytes  .</tspan>
 
-<tspan x="10" y="74">1.   2018-06-10 17:54:52 +0000     5754 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="74">1.   2018-06-10 17:58:01 +0000     5754 bytes  CHANGELOG.md</tspan>
 
-<tspan x="10" y="90">2.   2018-06-10 17:54:52 +0000     2814 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="90">2.   2018-06-10 17:58:01 +0000     2814 bytes  CONTRIBUTING.md</tspan>
 
-<tspan x="10" y="106">3.   2018-06-10 17:54:52 +0000     1460 bytes  LICENSE</tspan>
+<tspan x="10" y="106">3.   2018-06-10 17:58:01 +0000     1460 bytes  LICENSE</tspan>
 
-<tspan x="10" y="122">4.   2018-06-10 17:54:52 +0000     9137 bytes  README.md</tspan>
+<tspan x="10" y="122">4.   2018-06-10 17:58:01 +0000     9137 bytes  README.md</tspan>
 
-<tspan x="10" y="138">5.   2018-06-10 17:54:52 +0000      844 bytes  appveyor.yml</tspan>
+<tspan x="10" y="138">5.   2018-06-10 17:58:01 +0000      844 bytes  appveyor.yml</tspan>
 
-<tspan x="10" y="154">6.   2018-06-10 17:54:52 +0000     1352 bytes  binding.gyp</tspan>
+<tspan x="10" y="154">6.   2018-06-10 17:58:01 +0000     1352 bytes  binding.gyp</tspan>
 
-<tspan x="10" y="170">7.   2018-06-10 17:54:52 +0000     1258 bytes  deps/common-sqlite.gypi</tspan>
+<tspan x="10" y="170">7.   2018-06-10 17:58:01 +0000     1258 bytes  deps/common-sqlite.gypi</tspan>
 
-<tspan x="10" y="186">8.   2018-06-10 17:54:52 +0000      191 bytes  deps/extract.py</tspan>
+<tspan x="10" y="186">8.   2018-06-10 17:58:01 +0000      191 bytes  deps/extract.py</tspan>
 
-<tspan x="10" y="202">9.   2018-06-10 17:54:52 +0000  2490473 bytes  deps/sqlite-autoconf-3150000.tar.gz</tspan>
+<tspan x="10" y="202">9.   2018-06-10 17:58:01 +0000  2490473 bytes  deps/sqlite-autoconf-3150000.tar.gz</tspan>
 
-<tspan x="10" y="218">10.  2018-06-10 17:54:52 +0000     2656 bytes  deps/sqlite3.gyp</tspan>
+<tspan x="10" y="218">10.  2018-06-10 17:58:01 +0000     2656 bytes  deps/sqlite3.gyp</tspan>
 
-<tspan x="10" y="234">11.  2018-06-10 17:54:52 +0000      117 bytes  electron.sh</tspan>
+<tspan x="10" y="234">11.  2018-06-10 17:58:01 +0000      117 bytes  electron.sh</tspan>
 
-<tspan x="10" y="250">12.  2018-06-10 17:54:52 +0000  1734829 bytes  lib/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
+<tspan x="10" y="250">12.  2018-06-10 17:58:01 +0000  1734829 bytes  lib/binding/node-v48-linux-x64/node_sqlite3.node</tspan>
 
-<tspan x="10" y="266">13.  2018-06-10 17:54:52 +0000       39 bytes  lib/index.js</tspan>
+<tspan x="10" y="266">13.  2018-06-10 17:58:01 +0000       39 bytes  lib/index.js</tspan>
 
-<tspan x="10" y="282">14.  2018-06-10 17:54:52 +0000     5554 bytes  lib/sqlite3.js</tspan>
+<tspan x="10" y="282">14.  2018-06-10 17:58:01 +0000     5554 bytes  lib/sqlite3.js</tspan>
 
-<tspan x="10" y="298">15.  2018-06-10 17:54:52 +0000     1437 bytes  lib/trace.js</tspan>
+<tspan x="10" y="298">15.  2018-06-10 17:58:01 +0000     1437 bytes  lib/trace.js</tspan>
 
-<tspan x="10" y="314">16.  2018-06-10 17:54:52 +0000     4447 bytes  package.json</tspan>
+<tspan x="10" y="314">16.  2018-06-10 17:58:01 +0000     4447 bytes  package.json</tspan>
 
-<tspan x="10" y="330">17.  2018-06-10 17:54:52 +0000       43 bytes  sqlite3.js</tspan>
+<tspan x="10" y="330">17.  2018-06-10 17:58:01 +0000       43 bytes  sqlite3.js</tspan>
 
-<tspan x="10" y="346">18.  2018-06-10 17:54:52 +0000     1976 bytes  src/async.h</tspan>
+<tspan x="10" y="346">18.  2018-06-10 17:58:01 +0000     1976 bytes  src/async.h</tspan>
 
-<tspan x="10" y="362">19.  2018-06-10 17:54:52 +0000    19895 bytes  src/database.cc</tspan>
+<tspan x="10" y="362">19.  2018-06-10 17:58:01 +0000    19895 bytes  src/database.cc</tspan>
 
-<tspan x="10" y="378">20.  2018-06-10 17:54:52 +0000     4939 bytes  src/database.h</tspan>
+<tspan x="10" y="378">20.  2018-06-10 17:58:01 +0000     4939 bytes  src/database.h</tspan>
 
-<tspan x="10" y="394">21.  2018-06-10 17:54:52 +0000      249 bytes  src/gcc-preinclude.h</tspan>
+<tspan x="10" y="394">21.  2018-06-10 17:58:01 +0000      249 bytes  src/gcc-preinclude.h</tspan>
 
-<tspan x="10" y="410">22.  2018-06-10 17:54:52 +0000     8931 bytes  src/macros.h</tspan>
+<tspan x="10" y="410">22.  2018-06-10 17:58:01 +0000     8931 bytes  src/macros.h</tspan>
 
-<tspan x="10" y="426">23.  2018-06-10 17:54:52 +0000     4463 bytes  src/node_sqlite3.cc</tspan>
+<tspan x="10" y="426">23.  2018-06-10 17:58:01 +0000     4463 bytes  src/node_sqlite3.cc</tspan>
 
-<tspan x="10" y="442">24.  2018-06-10 17:54:52 +0000    27213 bytes  src/statement.cc</tspan>
+<tspan x="10" y="442">24.  2018-06-10 17:58:01 +0000    27213 bytes  src/statement.cc</tspan>
 
-<tspan x="10" y="458">25.  2018-06-10 17:54:52 +0000     6453 bytes  src/statement.h</tspan>
+<tspan x="10" y="458">25.  2018-06-10 17:58:01 +0000     6453 bytes  src/statement.h</tspan>
 
-<tspan x="10" y="474">26.  2018-06-10 17:54:52 +0000     1153 bytes  src/threading.h</tspan>
+<tspan x="10" y="474">26.  2018-06-10 17:58:01 +0000     1153 bytes  src/threading.h</tspan>
 
 </text>
 </svg>
